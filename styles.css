@@ -4,9 +4,16 @@
     padding: 0px;
 } */
 
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+* {
+    font-family: "Roboto";
+}
+
 html,
 body {
     min-height: 100vh;
+    min-width: 100vw;
     margin: 0px;
 }
 
@@ -25,6 +32,64 @@ header {
 .sidebar {
     grid-area: sidebar;
     background-color: #1992d4;
+    padding-left: 0.5rem;
+}
+
+.sidebar ul {
+    font-size: 1.5rem;
+    color: white;
+    list-style-type: none;
+    padding: 0px;
+    padding-bottom: 3rem;
+    margin: 0px;
+    margin-left: 1rem;
+    margin-top: 1rem;
+}
+
+.sidebar li {
+    /* background-image: url(./images/cog.svg); */
+    background-repeat: no-repeat;
+    background-size: 2.5rem auto;
+    background-position: 1rem 0.6rem; 
+    padding-left: 4.5rem; 
+    padding-bottom: 2rem;
+    padding-top: 1rem;
+}
+
+.sidebar .icon-home {
+    background-image: url(./images/home.svg);
+}
+
+.sidebar .icon-profile {
+    background-image: url(./images/card-account-details-outline.svg);
+}
+
+.sidebar .icon-messages {
+    background-image: url(./images/message-reply.svg);
+}
+
+.sidebar .icon-history {
+    background-image: url(./images/clock.svg);
+}
+
+.sidebar .icon-tasks {
+    background-image: url(./images/note-multiple.svg);
+}
+
+.sidebar .icon-communities {
+    background-image: url(./images/account-group.svg);
+}
+
+.sidebar .icon-settings {
+    background-image: url(./images/cog.svg);
+}
+
+.sidebar .icon-support {
+    background-image: url(./images/help-box.svg);
+}
+
+.sidebar .icon-privacy {
+    background-image: url(./images/shield-check.svg);
 }
 
 main {
