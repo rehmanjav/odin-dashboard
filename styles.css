@@ -25,6 +25,7 @@ img {
 body {
     display: grid;
     grid-template-columns: 1fr 5fr;
+    grid-template-rows: 200px auto;
     grid-template-areas: "sidebar header"
                          "sidebar main";
 }
@@ -104,10 +105,16 @@ main {
 
 .header-top {
     display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
 }
 
 .header-bottom {
     display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
 }
 
 .btn-blue {
