@@ -17,6 +17,11 @@ body {
     margin: 0px;
 }
 
+img {
+    height: 50px;
+    width: auto;
+}
+
 body {
     display: grid;
     grid-template-columns: 1fr 5fr;
@@ -96,3 +101,46 @@ main {
     grid-area: main;
     background-color: #e2e8f0;
 }
+
+.header-top {
+    display: flex;
+}
+
+.header-bottom {
+    display: flex;
+}
+
+.btn-blue {
+  align-items: center;
+  appearance: button;
+  background-color: #1992d4;
+  border-radius: 8px;
+  border-style: none;
+  box-shadow: rgba(255, 255, 255, 0.26) 0 1px 2px inset;
+  box-sizing: border-box;
+  color: #fff;
+  cursor: pointer;
+  display: flex;
+  flex-direction: row;
+  flex-shrink: 0;
+  font-family: "Roboto",sans-serif;
+  font-size: 100%;
+  line-height: 1.15;
+  margin: 0;
+  padding: 10px 21px;
+  text-align: center;
+  text-transform: none;
+  transition: color .13s ease-in-out,background .13s ease-in-out,opacity .13s ease-in-out,box-shadow .13s ease-in-out;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.btn-blue:active {
+  background-color: #006AE8;
+}
+
+.btn-blue:hover {
+  background-color: #1C84FF;
+}
+
