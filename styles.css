@@ -25,7 +25,7 @@ img {
 body {
     display: grid;
     grid-template-columns: 1fr 5fr;
-    grid-template-rows: 200px auto;
+    grid-template-rows: 220px auto;
     grid-template-areas: "sidebar header"
                          "sidebar main";
 }
@@ -105,23 +105,25 @@ main {
 
 .header-top {
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-start;
     align-items: center;
-    padding: 10px;
+    padding: 10px 40px;
+    gap: 20px;
 }
 
 .header-bottom {
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-start;
     align-items: center;
-    padding: 10px;
+    padding: 10px 40px;
+    gap: 20px;
 }
 
 .btn-blue {
   align-items: center;
   appearance: button;
   background-color: #1992d4;
-  border-radius: 8px;
+  border-radius: 20px;
   border-style: none;
   box-shadow: rgba(255, 255, 255, 0.26) 0 1px 2px inset;
   box-sizing: border-box;
@@ -159,7 +161,11 @@ main {
 
 .btn-search:hover,
 .btn-bell:hover {
-    background-color: lightgray;
+    background-color: #e2e8f0;
+}
+
+.btn-bell {
+    margin-left: 10rem;
 }
 
 .avatar {
@@ -168,5 +174,34 @@ main {
     background-size: cover;
     background-position: top center;
     border-radius: 50%;
+}
+
+.header-top > input {
+    flex-grow: 1;
+    line-height: 2rem;
+    border-radius: 20px;
+    background-color: #e2e8f0;
+    border: none;
+}
+
+.header-top > p {
+    font-size: 1.5rem;
+    font-weight: 800;
+}
+
+.hi-there-p1 {
+    font-size: 1rem;
+    font-weight: 800;
+    margin-bottom: 0px;
+}
+
+.hi-there-p2 {
+    font-size: 2rem;
+    font-weight: 800;
+    margin-top: 0px;
+}
+
+.btn-new {
+    margin-left: auto;
 }
 
