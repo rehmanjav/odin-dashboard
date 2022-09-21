@@ -205,3 +205,38 @@ main {
     margin-left: auto;
 }
 
+main {
+    display: grid;
+    grid-template-columns: 2.5fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: "projects announcements"
+                         "projects trending";
+    gap: 20px;
+    padding: 20px;
+}
+
+.projects {
+    grid-area: projects;
+    border: black solid 1px;
+}
+
+.announcements {
+    grid-area: announcements;
+    border: black solid 1px;
+}
+
+.trending {
+    grid-area: trending;
+    border: black solid 1px;
+}
+
+.announcements-div {
+    background-color: white;
+    border-radius: 25px;
+}
+
+.trending-div {
+    background-color: white;
+    border-radius: 25px;
+}
+
