@@ -233,6 +233,7 @@ main {
 .announcements-div {
     background-color: white;
     border-radius: 25px;
+    padding: 30px;
 }
 
 .trending-div {
