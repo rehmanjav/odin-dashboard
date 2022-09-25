@@ -241,3 +241,7 @@ main {
     border-radius: 25px;
 }
 
+.trending-user {
+    display: flex;
+}
+
