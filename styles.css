@@ -217,17 +217,17 @@ main {
 
 .projects {
     grid-area: projects;
-    border: black solid 1px;
+    /* border: black solid 1px; */
 }
 
 .announcements {
     grid-area: announcements;
-    border: black solid 1px;
+    /* border: black solid 1px; */
 }
 
 .trending {
     grid-area: trending;
-    border: black solid 1px;
+    /* border: black solid 1px; */
 }
 
 .announcements-div {
@@ -246,5 +246,47 @@ main {
     display: flex;
     align-items: center;
     gap: 20px;
+}
+
+.card {
+    background-color: white;
+    border-radius: 15px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    border-left: orange solid 10px;
+}
+
+.card > p {
+    margin-bottom: auto;
+    margin-top: 5px;
+}
+
+.card > h3 {
+    margin-bottom: 0px;
+}
+
+.card > div {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 30px;
+}
+
+.card button {
+    border:none;
+    background-color:transparent;
+    outline:none;
+}
+
+.card img {
+    height: 30px;
+    width: auto;
+}
+
+.projects-div {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-gap: 30px;
+    padding: 30px;
 }
 
