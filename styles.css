@@ -239,9 +239,12 @@ main {
 .trending-div {
     background-color: white;
     border-radius: 25px;
+    padding: 30px;
 }
 
 .trending-user {
     display: flex;
+    align-items: center;
+    gap: 20px;
 }
 
